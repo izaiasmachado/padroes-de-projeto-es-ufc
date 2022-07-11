@@ -14,8 +14,8 @@
 - As entregas devem ser feitas por meio de pull requests
 
 ## Objetivos
-- [ ] Sprint Planning
-- [ ] Implementar um padrão de projeto de criação
+- [x] Sprint Planning
+- [x] Implementar um padrão de projeto de criação
 - [ ] Implementar um padrão de projeto estrutural
 - [ ] Implementar um padrão de projeto comportamental
 - [ ] Seguir o TDD

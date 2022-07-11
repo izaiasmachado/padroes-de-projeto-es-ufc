@@ -15,12 +15,11 @@ public class EnderecoAdapter extends Endereco {
 	
 	public void setCep(String cep) {
 		super.setCep(cep);
-
-		String json = this.buscarCep(cep);
+		String json = ViaCep.buscarCep(cep);
 		this.setDados(json);
 	}
 	
-	private void setDados(String json) {		
+	public void setDados(String json) {		
         Map<String,String> mapa = Util.fromJsonToMap(json);
         
         String rua = mapa.get("logradouro");
@@ -33,27 +32,4 @@ public class EnderecoAdapter extends Endereco {
         this.setCidade(cidade);
         this.setUf(uf);
     }
-	
-    public String buscarCep(String cep) {
-        String json;
-
-        try {
-            URL url = new URL("http://viacep.com.br/ws/" + cep + "/json");
-            URLConnection urlConnection = url.openConnection();
-            InputStream is = urlConnection.getInputStream();
-            BufferedReader br = new BufferedReader(new InputStreamReader(is));
-
-            StringBuilder jsonSb = new StringBuilder();
-
-            Stream<String> lines = br.lines();
-            lines.forEach(line -> jsonSb.append(line.trim()));
-          
-            json = jsonSb.toString();
-            
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-
-        return json;
-    }	
 }

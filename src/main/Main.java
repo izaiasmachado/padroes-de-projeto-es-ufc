@@ -6,9 +6,8 @@ public class Main {
 		try {
 			Endereco a = new EnderecoAdapter();
 			Endereco b = new EnderecoAdapter();
-			
-//			b.setCep("62011140");
-//			System.out.println(b.toString());
+			b.setCep("98802630");
+			System.out.println(b.toString());
 //			
 //			a.setCep("62011050");
 //			System.out.println(a.toString());

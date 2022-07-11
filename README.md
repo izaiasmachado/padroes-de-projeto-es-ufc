@@ -15,8 +15,8 @@
 
 ## Objetivos
 - [x] Sprint Planning
-- [x] Implementar um padrão de projeto de criação
-- [ ] Implementar um padrão de projeto estrutural
+- [ ] Implementar um padrão de projeto de criação
+- [x] Implementar um padrão de projeto estrutural
 - [ ] Implementar um padrão de projeto comportamental
 - [ ] Seguir o TDD
 

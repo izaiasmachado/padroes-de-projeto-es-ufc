@@ -1,17 +1,15 @@
-package test;
-
 import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.Main;
+public class PedidoTest {
+	Pedido pedido;
 
-public class testMain {
-	
 	@Before
 	public void setUp() throws Exception {
+		pedido = new Pedido();
 	}
 
 	@After
@@ -19,7 +17,8 @@ public class testMain {
 	}
 
 	@Test
-	public void testeDeveriaRetornarHelloDaTransportadora() {
-		assertEquals(Main.hello(), "Hello Transportadora");
+	public void test() {
+		fail("Not yet implemented");
 	}
+
 }

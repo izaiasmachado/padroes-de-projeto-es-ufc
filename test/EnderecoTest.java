@@ -1,6 +1,3 @@
-
-package test;
-
 import static org.junit.Assert.*;
 
 import org.junit.After;
@@ -8,13 +5,11 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-import org.junit.runner.RunWith;
-import main.*;
-
 
 public class EnderecoTest {
 	Endereco endereco;
 	
+	@SuppressWarnings("deprecation")
 	@Rule
 	public final ExpectedException exception = ExpectedException.none();
 	

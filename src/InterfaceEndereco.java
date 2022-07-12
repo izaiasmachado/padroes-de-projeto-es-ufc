@@ -1,5 +1,3 @@
-package main;
-
 import java.util.UUID;
 
 public interface InterfaceEndereco {

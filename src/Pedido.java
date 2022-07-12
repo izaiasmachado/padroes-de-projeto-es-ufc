@@ -1,15 +1,22 @@
 import java.util.UUID;
-// PedidoAdmitido
-// PedidoEmCarregamento
-// PedidoEmTransporte
-// PedidoEntregue
+
 public class Pedido {
 	public final UUID uuid = UUID.randomUUID();
-	Endereco origem = null;
-	Endereco destino = null;
-	String dimensoes = "";
-	String peso = "";
-	String descricao = "";
+	Endereco origem;
+	Endereco destino;
+	String dimensoes;
+	String peso;
+	String descricao;
+	EstadoPedido estado;
+	
+	public Pedido() {
+		this.origem = null;
+		this.destino = null;
+		this.dimensoes = "";
+		this.peso = "";
+		this.descricao = "";
+		this.estado = EstadoPedido.Admitido;
+	}
 	
 	public Endereco getOrigem() {
 		return origem;
@@ -51,6 +58,17 @@ public class Pedido {
 		this.descricao = descricao;
 	}
 	
+	public EstadoPedido getEstado() {
+		return this.estado;
+	}
+	
+	public void proximoEstado() {
+		estado = estado.proximoEstado();
+	}
+	
+	public void estadoAnterior() {
+		estado = estado.estadoAnterior();
+	}
 	
 	public String toString() {
         return "Pedido {\n" +

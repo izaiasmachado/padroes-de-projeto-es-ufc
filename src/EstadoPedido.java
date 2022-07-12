@@ -9,7 +9,7 @@ public enum EstadoPedido {
 	},
 	Carregamento {
 		public EstadoPedido proximoEstado() {
-			return Carregamento;
+			return Transporte;
 		}
 		public EstadoPedido estadoAnterior() {
 			return Admitido;

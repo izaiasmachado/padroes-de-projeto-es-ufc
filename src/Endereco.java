@@ -1,7 +1,4 @@
-package main;
-
 import java.util.UUID;
-import java.util.stream.Stream;
 
 public class Endereco implements InterfaceEndereco {
 	public final UUID uuid = UUID.randomUUID();

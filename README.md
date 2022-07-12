@@ -17,8 +17,9 @@
 - [x] Sprint Planning
 - [x] Implementar um padrão de projeto de criação
 - [x] Implementar um padrão de projeto estrutural
-- [ ] Implementar um padrão de projeto comportamental
-- [ ] Seguir o TDD
+- [x] Implementar um padrão de projeto comportamental
+- [x] Seguir o TDD
+- [ ] Interface de usuário
 
 ## Colaboradores
 - [Francisco Jefferson Marques de Sousa](https://github.com/Jefferson-marques01)

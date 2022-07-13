@@ -19,7 +19,10 @@
 - [x] Implementar um padrão de projeto estrutural
 - [x] Implementar um padrão de projeto comportamental
 - [x] Seguir o TDD
-- [ ] Interface de usuário
+- [x] Interface de usuário
+
+## Screenshot
+![image](https://user-images.githubusercontent.com/47287096/178853190-e9b6ae80-dfb8-4e8a-8d9e-cbe77bffdb37.png)
 
 ## Colaboradores
 - [Francisco Jefferson Marques de Sousa](https://github.com/Jefferson-marques01)

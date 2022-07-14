@@ -1,7 +1,7 @@
 import java.util.HashSet;
 
 public final class ListaPedido {
-	HashSet<Pedido> lista;
+	private HashSet<Pedido> lista;
 	private static ListaPedido instance = null;
 
 	private ListaPedido () {
